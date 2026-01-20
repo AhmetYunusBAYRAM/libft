@@ -6,11 +6,9 @@
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 22:15:29 by abayram           #+#    #+#             */
-/*   Updated: 2026/01/20 22:27:51 by abayram          ###   ########.fr       */
+/*   Updated: 2026/01/20 22:29:09 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int	ft_isalnum(int word)
 {
