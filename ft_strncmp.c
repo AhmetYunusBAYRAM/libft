@@ -1,41 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/20 20:30:22 by abayram           #+#    #+#             */
-/*   Updated: 2026/01/20 21:10:09 by abayram          ###   ########.fr       */
+/*   Created: 2026/01/20 21:10:01 by abayram           #+#    #+#             */
+/*   Updated: 2026/01/20 21:22:15 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-void	*memmove(void *target, const void *head, size_t count)
-{
-	unsigned char	*char_target;
-	unsigned char	*char_head;
+int	strncpm(const char *word_first, const char *word_second, size_t count)
+{	
+	int	status;
+	int	index;
 
-	if (target == NULL && head == NULL)
+	index = 0;
+	status = 2;
+	while (index < count)
 	{
-		return (NULL);
-	}
-	char_target = (unsigned char *)target;
-	char_head = (unsigned char *)head;
-	if (char_target > char_head)
-	{
-		while (count--)
+		if (status != 0)
 		{
-			char_target[count] = char_head[count];
+			if (word_first[index] == word_second[index])
+			{
+				status = 1;
+			}
+			else
+			{
+				status = 0;
+			}
 		}
+		index++;
 	}
-	else
-	{
-		while (count--)
-		{
-			*char_target++ = *char_head++;
-		}
-	}
-	return (target);
+	return (status);
 }
