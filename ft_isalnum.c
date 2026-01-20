@@ -6,17 +6,19 @@
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 22:15:29 by abayram           #+#    #+#             */
-/*   Updated: 2026/01/20 22:23:05 by abayram          ###   ########.fr       */
+/*   Updated: 2026/01/20 22:27:51 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+
 int	ft_isalnum(int word)
 {
-	if ('a' >= word && word <= 'z')
+	if (word >= 'a' && word <= 'z')
 		return (1);
-	else if ('A' >= word && word <= 'Z')
+	else if (word >= 'A' && word <= 'Z')
 		return (1);
-	else if ('0' >= word && word <= '9')
+	else if (word >= '0' && word <= '9')
 		return (1);
 	else
 		return (0);
