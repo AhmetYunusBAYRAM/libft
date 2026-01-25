@@ -1,31 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/25 19:24:06 by abayram           #+#    #+#             */
-/*   Updated: 2026/01/25 19:36:02 by abayram          ###   ########.fr       */
+/*   Created: 2026/01/25 19:31:54 by abayram           #+#    #+#             */
+/*   Updated: 2026/01/25 19:35:15 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char *word, int search)
-{
-	unsigned char	char_to_find;
+#include <stdlib.h>
 
-	char_to_find = (unsigned char)search;
-	while (*word != '\0')
+char	*ft_strdup(const char *s1)
+{
+	char	*dest;
+	size_t	len;
+	size_t	i;
+
+	len = ft_strlen(s1);
+	dest = (char *)malloc(sizeof(char) * (len + 1));
+	if (!dest)
+		return (NULL);
+	i = 0;
+	while (s1[i])
 	{
-		if (*word == char_to_find)
-		{
-			return ((char *)word);
-		}
-		word++;
-	}	
-	if (char_to_find == '\0')
-	{
-		return ((char *)word);
+		dest[i] = s1[i];
+		i++;
 	}
-	return (0);
+	dest[i] = '\0';
+	return (dest);
 }

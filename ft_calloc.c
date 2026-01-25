@@ -1,31 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/25 19:24:06 by abayram           #+#    #+#             */
-/*   Updated: 2026/01/25 19:36:02 by abayram          ###   ########.fr       */
+/*   Created: 2026/01/25 19:30:25 by abayram           #+#    #+#             */
+/*   Updated: 2026/01/25 19:36:28 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char *word, int search)
-{
-	unsigned char	char_to_find;
+#include <stdlib.h>
 
-	char_to_find = (unsigned char)search;
-	while (*word != '\0')
-	{
-		if (*word == char_to_find)
-		{
-			return ((char *)word);
-		}
-		word++;
-	}	
-	if (char_to_find == '\0')
-	{
-		return ((char *)word);
-	}
-	return (0);
+void	*ft_calloc(size_t count, size_t size)
+{
+	void	*ptr;
+	size_t	total_size;
+
+	total_size = count * size;
+	ptr = malloc(total_size);
+	if (ptr == NULL)
+		return (NULL);
+	ft_bzero(ptr, total_size);
+	return (ptr);
 }
