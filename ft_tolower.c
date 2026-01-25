@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/25 19:06:47 by abayram           #+#    #+#             */
-/*   Updated: 2026/01/25 19:16:37 by abayram          ###   ########.fr       */
+/*   Created: 2026/01/25 19:15:35 by abayram           #+#    #+#             */
+/*   Updated: 2026/01/25 19:17:36 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int input_val)
+int	ft_tolower(int input_val)
 {
-	if (input_val >= 'a' && input_val <= 'z')
+	if (input_val >= 'A' && input_val <= 'Z')
 	{
-		return (input_val - 32);
+		return (input_val + 32);
 	}
 	return (input_val);
 }
