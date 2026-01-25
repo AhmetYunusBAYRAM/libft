@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/25 18:40:01 by abayram           #+#    #+#             */
-/*   Updated: 2026/01/25 18:56:04 by abayram          ###   ########.fr       */
+/*   Created: 2026/01/25 18:55:06 by abayram           #+#    #+#             */
+/*   Updated: 2026/01/25 18:57:23 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,27 +22,4 @@ size_t	ft_strlen(const char *str)
 		index ++;
 	}
 	return (index);
-}
-
-size_t	fr_strlcat(char *target, const char *head, size_t count)
-{
-	size_t	target_len;
-	size_t	head_len;
-	size_t	index_first;
-	size_t	index_second;
-
-	target_len = ft_strlen(head);
-	head_len = ft_strlen(target);
-	if (count <= target_len)
-		return (count + target_len);
-	index_first = head_len;
-	index_second = 0;
-	while (head[index_second] && (index_first + 1) < count)
-	{
-		target[index_first] = head[index_second];
-		index_first++;
-		index_second++;
-	}
-	target[index_first] = '\0';
-	return (target_len + head_len);
 }
