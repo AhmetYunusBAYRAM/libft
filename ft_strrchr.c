@@ -6,11 +6,11 @@
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/18 20:03:25 by abayram           #+#    #+#             */
-/*   Updated: 2026/01/18 20:16:16 by abayram          ###   ########.fr       */
+/*   Updated: 2026/01/30 17:31:52 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strrchar(const char *word, int wanted)
+char	*ft_strrchr(const char *word, int wanted)
 {
 	int	length;
 

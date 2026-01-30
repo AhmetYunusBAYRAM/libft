@@ -6,13 +6,13 @@
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 21:10:01 by abayram           #+#    #+#             */
-/*   Updated: 2026/01/20 21:22:15 by abayram          ###   ########.fr       */
+/*   Updated: 2026/01/30 18:25:55 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-int	strncpm(const char *word_first, const char *word_second, size_t count)
+int	strncpm(const char *first, const char *second, size_t count)
 {	
 	int	status;
 	int	index;
