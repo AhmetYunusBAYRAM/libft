@@ -6,11 +6,11 @@
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/25 18:30:38 by abayram           #+#    #+#             */
-/*   Updated: 2026/01/25 18:39:16 by abayram          ###   ########.fr       */
+/*   Updated: 2026/02/01 01:39:57 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_print(int input_val)
+int	ft_isprint(int input_val)
 {
 	if (input_val >= 32 && input_val <= 126)
 	{

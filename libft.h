@@ -6,7 +6,7 @@
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/30 17:33:50 by abayram           #+#    #+#             */
-/*   Updated: 2026/01/31 03:20:12 by abayram          ###   ########.fr       */
+/*   Updated: 2026/02/01 01:40:00 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_isalnum(int word);
 int		ft_isalpha(int value);
 int		ft_isdigit(int number);
-int		ft_print(int input_val);
+int		ft_isprint(int input_val);
 int		ft_atoi(const char *str);
 int		ft_toupper(int input_val);
 int		ft_tolower(int input_val);
