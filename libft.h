@@ -6,7 +6,7 @@
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/30 17:33:50 by abayram           #+#    #+#             */
-/*   Updated: 2026/02/01 01:40:00 by abayram          ###   ########.fr       */
+/*   Updated: 2026/02/01 02:09:46 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,10 @@ char	*ft_strdup(const char *s1);
 char	*ft_strchr(const char *word, int search);
 char	*ft_strrchr(const char *word, int wanted);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
+char	**ft_split(char const *s, char c);
 int		ft_isalnum(int word);
 int		ft_isalpha(int value);
 int		ft_isdigit(int number);
