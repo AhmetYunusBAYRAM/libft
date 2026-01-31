@@ -6,9 +6,11 @@
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/18 20:03:25 by abayram           #+#    #+#             */
-/*   Updated: 2026/01/30 17:31:52 by abayram          ###   ########.fr       */
+/*   Updated: 2026/02/01 01:46:12 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strrchr(const char *word, int wanted)
 {

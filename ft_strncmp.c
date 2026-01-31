@@ -6,11 +6,12 @@
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 21:10:01 by abayram           #+#    #+#             */
-/*   Updated: 2026/01/31 03:20:23 by abayram          ###   ########.fr       */
+/*   Updated: 2026/02/01 01:46:07 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
+#include "libft.h"
 
 int	strncpm(const char *first, const char *second, size_t count)
 {	

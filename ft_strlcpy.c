@@ -6,11 +6,12 @@
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 22:32:16 by abayram           #+#    #+#             */
-/*   Updated: 2026/01/20 22:51:11 by abayram          ###   ########.fr       */
+/*   Updated: 2026/02/01 01:46:00 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
+#include "libft.h"
 
 size_t	ft_strlcpy(char *target, const char *head, size_t count)
 {

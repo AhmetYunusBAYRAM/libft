@@ -6,11 +6,12 @@
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 22:52:26 by abayram           #+#    #+#             */
-/*   Updated: 2026/01/25 18:24:48 by abayram          ###   ########.fr       */
+/*   Updated: 2026/02/01 01:45:37 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *sentence, int word, size_t count)
 {

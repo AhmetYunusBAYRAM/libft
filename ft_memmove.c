@@ -6,11 +6,12 @@
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 20:30:22 by abayram           #+#    #+#             */
-/*   Updated: 2026/01/20 21:10:09 by abayram          ###   ########.fr       */
+/*   Updated: 2026/02/01 01:45:45 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
+#include "libft.h"
 
 void	*memmove(void *target, const void *head, size_t count)
 {
