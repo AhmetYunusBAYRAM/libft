@@ -6,7 +6,7 @@
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/30 17:33:50 by abayram           #+#    #+#             */
-/*   Updated: 2026/01/30 18:47:09 by abayram          ###   ########.fr       */
+/*   Updated: 2026/01/31 03:20:12 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,6 @@ int		ft_toupper(int input_val);
 int		ft_tolower(int input_val);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		strncpm(const char *first, const char *second, size_t count);
-void	ft_bzero(void *s, size_t n);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t count, size_t size);
 void	*ft_memset(void *head, int target, size_t count);

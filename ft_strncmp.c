@@ -6,7 +6,7 @@
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 21:10:01 by abayram           #+#    #+#             */
-/*   Updated: 2026/01/30 18:25:55 by abayram          ###   ########.fr       */
+/*   Updated: 2026/01/31 03:20:23 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	strncpm(const char *first, const char *second, size_t count)
 	{
 		if (status != 0)
 		{
-			if (word_first[index] == word_second[index])
+			if (first[index] == second[index])
 			{
 				status = 1;
 			}
