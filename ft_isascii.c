@@ -1,20 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/25 19:15:35 by abayram           #+#    #+#             */
-/*   Updated: 2026/02/01 01:37:44 by abayram          ###   ########.fr       */
+/*   Created: 2026/02/01 01:35:52 by abayram           #+#    #+#             */
+/*   Updated: 2026/02/01 01:37:32 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(int input_val)
+int	ft_isascii(int number)
 {
-	if (input_val >= 'A' && input_val <= 'Z')
-	{
-		return (input_val + 32);
-	}
-	return (input_val);
+	if (number >= 0 && number <= 127)
+		return (1);
+	return (0);
 }
