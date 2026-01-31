@@ -6,23 +6,11 @@
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/25 18:40:01 by abayram           #+#    #+#             */
-/*   Updated: 2026/01/25 18:56:04 by abayram          ###   ########.fr       */
+/*   Updated: 2026/02/01 01:56:26 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-
-size_t	ft_strlen(const char *str)
-{
-	size_t	index;
-
-	index = 0;
-	while (str[index] != '\0')
-	{
-		index ++;
-	}
-	return (index);
-}
+#include "libft.h"
 
 size_t	fr_strlcat(char *target, const char *head, size_t count)
 {

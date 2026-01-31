@@ -6,11 +6,11 @@
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/25 19:31:54 by abayram           #+#    #+#             */
-/*   Updated: 2026/01/25 19:35:15 by abayram          ###   ########.fr       */
+/*   Updated: 2026/02/01 01:56:40 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *s1)
 {

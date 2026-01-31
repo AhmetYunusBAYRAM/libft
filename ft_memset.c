@@ -6,11 +6,10 @@
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/25 19:10:54 by abayram           #+#    #+#             */
-/*   Updated: 2026/02/01 01:45:50 by abayram          ###   ########.fr       */
+/*   Updated: 2026/02/01 01:56:46 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
 void	*ft_memset(void *head, int target, size_t count)

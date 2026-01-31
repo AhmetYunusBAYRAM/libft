@@ -6,11 +6,11 @@
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/25 19:22:32 by abayram           #+#    #+#             */
-/*   Updated: 2026/01/25 19:23:23 by abayram          ###   ########.fr       */
+/*   Updated: 2026/02/01 01:57:12 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
