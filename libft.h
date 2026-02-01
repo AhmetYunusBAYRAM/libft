@@ -6,7 +6,7 @@
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/30 17:33:50 by abayram           #+#    #+#             */
-/*   Updated: 2026/02/01 03:12:26 by abayram          ###   ########.fr       */
+/*   Updated: 2026/02/01 03:14:32 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ void	*ft_memchr(const void *sentence, int word, size_t count);
 void	*ft_memcpy(void *target, const void *head, size_t count);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putnbr_fd(int n, int fd);
+void	ft_lstadd_back(t_list **lst, t_list *new);
 size_t	ft_strlen(const char *str);
 size_t	fr_strlcat(char *target, const char *head, size_t count);
 size_t	ft_strlcpy(char *target, const char *head, size_t count);
