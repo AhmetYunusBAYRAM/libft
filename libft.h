@@ -6,7 +6,7 @@
 /*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/30 17:33:50 by abayram           #+#    #+#             */
-/*   Updated: 2026/02/01 03:23:27 by abayram          ###   ########.fr       */
+/*   Updated: 2026/02/01 03:29:32 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 void	ft_lstadd_front(t_list **lst, t_list *new);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+void	ft_putstr_fd(char *s, int fd);
 size_t	ft_strlen(const char *str);
 size_t	fr_strlcat(char *target, const char *head, size_t count);
 size_t	ft_strlcpy(char *target, const char *head, size_t count);
