@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ahmetyunusbayram <ahmetyunusbayram@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/30 17:33:50 by abayram           #+#    #+#             */
-/*   Updated: 2026/02/04 19:00:49 by abayram          ###   ########.fr       */
+/*   Updated: 2026/02/08 03:15:12 by ahmetyunusb      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,9 +59,8 @@ void	ft_lstadd_front(t_list **lst, t_list *new);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void	ft_putstr_fd(char *s, int fd);
 size_t	ft_strlen(const char *str);
-size_t	fr_strlcat(char *target, const char *head, size_t count);
 size_t	ft_strlcpy(char *target, const char *head, size_t count);
-size_t	fr_strlcat(char *target, const char *head, size_t count);
+size_t	ft_strlcat(char *target, const char *head, size_t count);
 t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstnew(void *content);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));

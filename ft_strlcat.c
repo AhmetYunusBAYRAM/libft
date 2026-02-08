@@ -3,34 +3,39 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ahmetyunusbayram <ahmetyunusbayram@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/25 18:40:01 by abayram           #+#    #+#             */
-/*   Updated: 2026/02/01 01:56:26 by abayram          ###   ########.fr       */
+/*   Updated: 2026/02/08 03:18:58 by ahmetyunusb      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	fr_strlcat(char *target, const char *head, size_t count)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t	target_len;
-	size_t	head_len;
-	size_t	index_first;
-	size_t	index_second;
+	size_t	dst_len;
+	size_t	src_len;
+	size_t	i;
 
-	target_len = ft_strlen(head);
-	head_len = ft_strlen(target);
-	if (count <= target_len)
-		return (count + target_len);
-	index_first = head_len;
-	index_second = 0;
-	while (head[index_second] && (index_first + 1) < count)
+	src_len = ft_strlen(src);
+	dst_len = 0;
+    
+	while (dst[dst_len] && dst_len < size)
+		dst_len++;
+
+
+	if (dst_len == size)
+		return (size + src_len);
+
+	i = 0;
+	while (src[i] && (dst_len + i + 1) < size)
 	{
-		target[index_first] = head[index_second];
-		index_first++;
-		index_second++;
+		dst[dst_len + i] = src[i];
+		i++;
 	}
-	target[index_first] = '\0';
-	return (target_len + head_len);
+    
+	dst[dst_len + i] = '\0';
+
+	return (dst_len + src_len);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ahmetyunusbayram <ahmetyunusbayram@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/18 20:03:25 by abayram           #+#    #+#             */
-/*   Updated: 2026/02/01 01:46:12 by abayram          ###   ########.fr       */
+/*   Updated: 2026/02/08 03:06:12 by ahmetyunusb      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,10 @@
 
 char	*ft_strrchr(const char *word, int wanted)
 {
-	int	length;
+	int		length;
+	unsigned char	c;
 
+	c = (unsigned char)wanted; 
 	length = 0;
 	while (word[length] != '\0')
 	{
@@ -23,7 +25,7 @@ char	*ft_strrchr(const char *word, int wanted)
 	}
 	while (length >= 0)
 	{
-		if (word[length] == wanted)
+		if ((unsigned char)word[length] == c)
 		{
 			return ((char *)&word[length]);
 		}
