@@ -1,26 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahmetyunusbayram <ahmetyunusbayram@stud    +#+  +:+       +#+        */
+/*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/13 19:58:28 by abayram           #+#    #+#             */
-/*   Updated: 2026/02/08 03:02:55 by ahmetyunusb      ###   ########.fr       */
+/*   Created: 2026/01/25 19:10:54 by abayram           #+#    #+#             */
+/*   Updated: 2026/02/01 01:56:46 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalpha(int value)
+void	*ft_memset(void *head, int target, size_t count)
 {
-    if (value >= 'a' && value <= 'z')
-    {
-        return (1);
-    }
-    else if (value >= 'A' && value <= 'Z')
-    {
-        return (1);
-    }
-    return (0);
+	unsigned char	*head_char;
+	size_t			i;
+
+	head_char = (unsigned char *)head;
+	i = 0;
+	while (i < count)
+	{
+		head_char[i] = (unsigned char)target;
+		i++;
+	}
+	return (head_char);
 }

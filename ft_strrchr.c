@@ -1,26 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahmetyunusbayram <ahmetyunusbayram@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/13 19:58:28 by abayram           #+#    #+#             */
-/*   Updated: 2026/02/08 03:02:55 by ahmetyunusb      ###   ########.fr       */
+/*   Created: 2026/01/18 20:03:25 by abayram           #+#    #+#             */
+/*   Updated: 2026/02/08 03:06:12 by ahmetyunusb      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalpha(int value)
+char	*ft_strrchr(const char *word, int wanted)
 {
-    if (value >= 'a' && value <= 'z')
-    {
-        return (1);
-    }
-    else if (value >= 'A' && value <= 'Z')
-    {
-        return (1);
-    }
-    return (0);
+	int		length;
+	unsigned char	c;
+
+	c = (unsigned char)wanted; 
+	length = 0;
+	while (word[length] != '\0')
+	{
+		length++;
+	}
+	while (length >= 0)
+	{
+		if ((unsigned char)word[length] == c)
+		{
+			return ((char *)&word[length]);
+		}
+		length--;
+	}
+	return (0);
 }

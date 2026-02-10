@@ -1,26 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahmetyunusbayram <ahmetyunusbayram@stud    +#+  +:+       +#+        */
+/*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/13 19:58:28 by abayram           #+#    #+#             */
-/*   Updated: 2026/02/08 03:02:55 by ahmetyunusb      ###   ########.fr       */
+/*   Created: 2026/02/01 02:43:00 by abayram           #+#    #+#             */
+/*   Updated: 2026/02/01 02:55:28 by abayram          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <unistd.h>
 
-int ft_isalpha(int value)
+void	ft_putchar_fd(char c, int fd)
 {
-    if (value >= 'a' && value <= 'z')
-    {
-        return (1);
-    }
-    else if (value >= 'A' && value <= 'Z')
-    {
-        return (1);
-    }
-    return (0);
+	if (fd >= 0)
+		write(fd, &c, 1);
 }
