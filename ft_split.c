@@ -3,13 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abayram <abayram@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ahmetyunusbayram <ahmetyunusbayram@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/01 02:06:19 by abayram           #+#    #+#             */
-/*   Updated: 2026/02/01 02:08:53 by abayram          ###   ########.fr       */
+/*   Updated: 2026/02/08 06:59:51 by ahmetyunusb      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include "libft.h"
 
 static int	count_words(const char *s, char c)
@@ -29,14 +30,6 @@ static int	count_words(const char *s, char c)
 	return (cnt);
 }
 
-static char	**free_all(char **split, int i)
-{
-	while (i >= 0)
-		free(split[i--]);
-	free(split);
-	return (NULL);
-}
-
 static char	**fill_split(char **lst, char const *s, char c)
 {
 	int	i;
@@ -53,11 +46,7 @@ static char	**fill_split(char **lst, char const *s, char c)
 		while (s[i] && s[i] != c)
 			i++;
 		if (i > start)
-		{
-			lst[j] = ft_substr(s, start, i - start);
-			if (!lst[j++])
-				return (free_all(lst, j - 2));
-		}
+			lst[j++] = ft_substr(s, start, i - start);
 	}
 	lst[j] = NULL;
 	return (lst);
